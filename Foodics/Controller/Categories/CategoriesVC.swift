@@ -10,7 +10,12 @@ import UIKit
 
 class CategoriesVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let pageSize = 20
+    private var allCategories = [CategoryModel](){
+        didSet{
+            categories = allCategories.chunked(into: pageSize).first!
+        }
+    }
     private var categories = [CategoryModel](){
         didSet{
             DispatchQueue.main.async {
@@ -37,7 +42,7 @@ class CategoriesVC: UIViewController {
     //MARK: get data from API
     func getData(){
         self.viewModel.getCategories { [weak self] (categories) in
-            self?.categories = categories
+            self?.allCategories = (categories + categories + categories + categories + categories)
         }
     }
 }
@@ -67,6 +72,26 @@ extension CategoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
         vc.categoryId = self.categories[indexPath.row].id
         vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        self.paginate(indexPath.row)
+    }
+    
+    func paginate(_ index:Int){
+        guard index >= categories.count - 1  else {
+            return
+        }
+        let pagesCount = allCategories.chunked(into: pageSize).count
+        if index % pageSize == 0{
+            if (index/pageSize) < pagesCount{
+                categories += allCategories.chunked(into: pageSize)[(index/pageSize)]
+            }
+        }else{
+            if (Int(index/pageSize) + 1) < pagesCount{
+                categories += allCategories.chunked(into: pageSize)[(Int(index/pageSize) + 1)]
+            }
+        }
     }
 }
 

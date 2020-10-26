@@ -10,10 +10,12 @@
 		42E5169AB9E3F30711CAD731 /* Pods_Foodics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAED54134F58881E297BC8E /* Pods_Foodics.framework */; };
 		6183666F2702B7FAF7FCD8E4 /* Pods_FoodicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097568CF031CC0DD63B43898 /* Pods_FoodicsTests.framework */; };
 		B60556EF63EF32D3208C6C72 /* Pods_Foodics_FoodicsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF111874363D65999177B887 /* Pods_Foodics_FoodicsUITests.framework */; };
+		DE38C3F125461D0700C1C490 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C3F025461D0700C1C490 /* ArrayExt.swift */; };
 		DE3D6AB2251B319D00FEE6BF /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6AB0251B319D00FEE6BF /* CategoryCell.swift */; };
 		DE3D6AB3251B319D00FEE6BF /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D6AB1251B319D00FEE6BF /* CategoryCell.xib */; };
 		DE3D6AB8251B3DA300FEE6BF /* ProductsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6AB7251B3DA300FEE6BF /* ProductsVM.swift */; };
 		DE3D6ABA251B421400FEE6BF /* CollextionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D6AB9251B421400FEE6BF /* CollextionExt.swift */; };
+		DE7086C32546CEA400A0F34A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7086C22546CEA400A0F34A /* TableViewController.swift */; };
 		DED14AE5251C8B930008338D /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED14AE3251C8B930008338D /* RealmDB.swift */; };
 		DED14AE6251C8B930008338D /* RealmOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED14AE4251C8B930008338D /* RealmOperationProtocol.swift */; };
 		DED14AE9251CB7EC0008338D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED14AE8251CB7EC0008338D /* Colors.xcassets */; };
@@ -68,10 +70,12 @@
 		A42812C1DC0FC409B2C95AE3 /* Pods-FoodicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodicsTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodicsTests/Pods-FoodicsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1AF507589C7B949C692DD69 /* Pods-Foodics-FoodicsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodics-FoodicsUITests.release.xcconfig"; path = "Target Support Files/Pods-Foodics-FoodicsUITests/Pods-Foodics-FoodicsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BCAED54134F58881E297BC8E /* Pods_Foodics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE38C3F025461D0700C1C490 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		DE3D6AB0251B319D00FEE6BF /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		DE3D6AB1251B319D00FEE6BF /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		DE3D6AB7251B3DA300FEE6BF /* ProductsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVM.swift; sourceTree = "<group>"; };
 		DE3D6AB9251B421400FEE6BF /* CollextionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollextionExt.swift; sourceTree = "<group>"; };
+		DE7086C22546CEA400A0F34A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DED14AE3251C8B930008338D /* RealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		DED14AE4251C8B930008338D /* RealmOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperationProtocol.swift; sourceTree = "<group>"; };
 		DED14AE8251CB7EC0008338D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -288,6 +292,7 @@
 				DE3D6AB9251B421400FEE6BF /* CollextionExt.swift */,
 				DED14AEA251CB93D0008338D /* StringAttributed.swift */,
 				DED14AF1251CC0580008338D /* UIViewConrolEXT.swift */,
+				DE38C3F025461D0700C1C490 /* ArrayExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				DED14AEC251CC00A0008338D /* popUpView */,
 				DEE9606B251A970A0035EF3C /* Categories */,
 				DEE9606C251A973F0035EF3C /* Products */,
+				DE7086C22546CEA400A0F34A /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -606,6 +612,7 @@
 			files = (
 				DEE96019251A849A0035EF3C /* CategoriesVC.swift in Sources */,
 				DED14AF2251CC0590008338D /* UIViewConrolEXT.swift in Sources */,
+				DE38C3F125461D0700C1C490 /* ArrayExt.swift in Sources */,
 				DEE9605C251A86A60035EF3C /* ImageExt.swift in Sources */,
 				DEE9605F251A86A60035EF3C /* CategoryModel.swift in Sources */,
 				DEE9604E251A856C0035EF3C /* APIConfigurations.swift in Sources */,
@@ -622,6 +629,7 @@
 				DED14AEB251CB93D0008338D /* StringAttributed.swift in Sources */,
 				DEE96070251A98C40035EF3C /* GeneralModels.swift in Sources */,
 				DEE96050251A856C0035EF3C /* Extensions.swift in Sources */,
+				DE7086C32546CEA400A0F34A /* TableViewController.swift in Sources */,
 				DEE9604F251A856C0035EF3C /* EndPoints.swift in Sources */,
 				DED14AEF251CC0330008338D /* PopUpVC.swift in Sources */,
 				DEE96017251A849A0035EF3C /* SceneDelegate.swift in Sources */,
